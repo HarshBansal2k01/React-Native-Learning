@@ -13,6 +13,7 @@ import {
   Alert,
 } from "react-native";
 import Greet from "./Components/Greet";
+import StyleSheetAPI from "./Components/StyleSheetApi";
 const logoImage = require("./assets/adaptive-icon.png");
 const bgImage = require("./assets/splash.png");
 export default function App() {
@@ -125,7 +126,8 @@ export default function App() {
           ])
         }
       /> */}
-      <Greet name="Harsh" />
+      {/* <Greet name="Harsh" /> */}
+      <StyleSheetAPI/>
     </View>
   );
 }
