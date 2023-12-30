@@ -18,6 +18,12 @@ import StyleSheetAPI from "./Components/StyleSheetApi";
 import Layouts from "./Components/Layouts";
 import DynamicUI from "./Components/DynamicUI";
 import SafeAreaView from "./Components/SafeAreaView";
+import RNList from "./Components/RNList";
+import RNForms from "./Components/RNForms";
+import Networking from "./Components/Networking";
+import Navigation from "./Components/Navigation";
+import DrawerNavigtion from "./Components/DrawerNavigtion";
+import TabNavigation from "./Components/TabNavigation";
 const logoImage = require("./assets/adaptive-icon.png");
 const bgImage = require("./assets/splash.png");
 export default function App() {
@@ -149,10 +155,21 @@ export default function App() {
 
     //DYNAMIC
 
-    <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
-       {/* will help to run coe in every size device */}
-    {/* <DynamicUI /> */}
-    <SafeAreaView/>
+    // <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
+    //    {/* will help to run coe in every size device */}
+    // {/* <DynamicUI /> */}
+    // <SafeAreaView/>
+    // </View>
+
+    // LIST
+
+    <View style={{ flex: 1 }}>
+      {/* <RNList/> */}
+      {/* <RNForms/> */}
+      {/* <Networking /> */}
+      {/* <Navigation/> */}
+      {/* <DrawerNavigtion/> */}
+      <TabNavigation />
     </View>
   );
 }
@@ -161,7 +178,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: 64,
-    borderWidth: 6,
-    borderColor: "red",
+    // borderWidth: 6,
+    // borderColor: "red",
+    alignItems: "center",
   },
 });
